@@ -10,6 +10,62 @@
 	<link rel="stylesheet" media="screen" href="main.css">
 </head>
 <body>
-	
+
+<div class="l-banner">
+	<img src="banner.png">
+</div>
+
+<div class="l-wrapper">
+	<form class="l-inner" method="post" action="login.php">
+		<header class="l-header">
+			<h1>Login with your wargaming.net account</h1>
+		</header>
+		<div class="l-content">
+			<p>Select your login server and specify your e-mail-address if:</p>
+			<ul>
+				<li>This is your first time logging in, your account will be registered with this address.</li>
+				<li>You want to change your currently associated e-mail-address.</li>
+			</ul>
+			<table>
+				<tr>
+					<td>Region</td>
+					<td>
+						<input class="region-input" value="eu" name="region" id="region-eu" type="radio" checked>
+						<label class="region-label region-label-eu" for="region-eu" title="EU">EU</label>
+						
+						<input class="region-input"value="na" name="region" id="region-na" type="radio">
+						<label class="region-label region-label-na" for="region-na" title="NA">NA</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="email">E-mail</label></td>
+					<td><input class="email" type="text" name="email" id="email" placeholder="mrsexii@idealclan.eu"></td>
+				</tr>
+			</table>
+			<p class="align-center">
+				<input class="submit" type="submit" value="Login" name="submit" id="submit">
+			</p>
+		</div>
+	</form>
+	<div class="l-inner">
+		<header class="l-header">
+			<h1>Further information</h1>
+		</header>
+		<div class="l-content">
+			<h2>Why do we ask for your e-mail?</h2>
+			<p>
+				Wargaming does not give us access to it.<br>
+				Also due to phpbb security settings this is the only way to change it later on.<br>
+				Thus if at any time you wish to change your e-mail, change it here, otherwise leave it blank.
+			</p>
+			<h2>Why do we need or want it?</h2>
+			<p>
+				We don't really. It's just for you in case you want to use forum notifications via e-mail.<br>
+				So feel free to leave it completely blank.
+			</p>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>

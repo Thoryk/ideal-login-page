@@ -546,8 +546,136 @@ textarea {
    Page styles
    ========================================================================== */
 
-.l-wrapper {
+body {
+	background: #FFE5F2;
+}
+   
+.l-banner {
+	background: #f1c2e1;
 	
+	text-align: center;
+}
+   
+.l-wrapper {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.l-inner {
+	margin: 20px 0;
+	
+	border: 5px solid #C1E5C7;
+	border-radius: 5px;
+	
+	background: #F5F5F5;	
+}
+
+.l-header {
+	padding: 0 0 4px 0;
+	
+	background: #C1E5C7;
+}
+
+.l-header h1 {
+	margin: 0;
+	
+	color: #fff;
+	
+	font: bold 10px/16px Arial;
+	text-transform: uppercase;	
+}
+
+.l-content {
+	padding: 15px;
+	
+	font: normal 13px/18px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.l-content h2 {
+	font: bold 15px/18.75px "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+}
+
+.l-content > *:first-child {
+	margin-top: 0;	
+}
+
+.l-content > *:last-child {
+	margin-bottom: 0;	
+}
+
+.l-content table {
+	border-collapse: collapse;
+	padding: 0;
+	
+	font: normal 13px/18px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	
+	table-layout: fixed;
+}
+
+.l-content td {
+	padding: 5px 10px;
+	
+	vertical-align: top;
+}
+
+.l-content td:first-child {
+	padding-left: 0;
+}
+
+.region-input {
+	display: none;
+}
+
+.region-input:checked + .region-label {
+	background-color: #C1E5C7;
+	
+	transition: background-color 0.3s;
+}
+
+.region-label {
+	display: inline-block;
+	
+	padding: 3px;
+	width: 60px;
+	height: 40px;
+	
+	background-color: transparent;
+	
+	text-indent: -9999px;
+	
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+/*
+	icons from:
+	https://www.iconfinder.com/icons/92077/european_union_icon#size=64
+	https://www.iconfinder.com/icons/92407/states_united_icon#size=64
+*/
+.region-label-eu {
+	margin-right: 20px;
+	
+	background: url("icon-eu.png") no-repeat center center;
+}
+
+.region-label-na {
+	background: url("icon-us.png") no-repeat center center;
+}
+
+.email {
+	border: 1px solid #8A8A8A;
+	padding: 3px 5px;
+	width: 200px;
+	
+	color: #333;
+}
+
+.submit {
+	padding: 3px 20px;
+}
+
+.align-center {
+	text-align: center;
 }
 
 /* ==========================================================================
